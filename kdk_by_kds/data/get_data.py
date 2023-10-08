@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from kdk_constant import url, headers, data_def
+from data.kdk_constant import url, headers, data_def
 
 # set range to read
 data = data_def
@@ -16,7 +16,10 @@ resp_json = response.json()
 
 df = pd.DataFrame.from_dict(resp_json['data'])
 
+df.to_csv("kdk_all_data.csv")
+
 # references and tools
 #
 # https://www.urldecoder.io/
 # https://codebeautify.org/htmlviewer
+# https://stackoverflow.com/a/1260846
