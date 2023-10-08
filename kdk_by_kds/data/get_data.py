@@ -16,7 +16,7 @@ resp_json = response.json()
 
 df = pd.DataFrame.from_dict(resp_json['data'])
 
-df.to_csv("kdk_all_data.csv")
+df.to_csv("kdk_all_data.csv", index=False)
 
 # references and tools
 #

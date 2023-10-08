@@ -1,6 +1,7 @@
-from insight_utils import *
+import pandas as pd
+from data.insight_utils import *
 
-df =""
+df = pd.read_csv("kdk_all_data_n10349.csv", index_col=None)
 
 check_df(df)
 
