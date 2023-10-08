@@ -2,7 +2,8 @@
 Based on the Original file which located at
     https://colab.research.google.com/drive/1kHfD5eP91IBF5Shguq4muPIEib9gME0Y
 
-Authors:
+Authors: Ece Beren GENÇ, ...
+Contributors:
 """
 import os
 import gc
