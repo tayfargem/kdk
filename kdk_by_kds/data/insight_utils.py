@@ -34,6 +34,7 @@ def check_df(dataframe, head=5):
     print("\n")
     print("##################### Quantiles #####################")
     print(dataframe.quantile([0, 0.05, 0.50, 0.95, 0.99, 1]).T)
+    # TODO add exception for quantile, if no numeric column>> erorrs!
 
 
 def grab_col_names(dataframe, categorical_threshold=10, cardinal_threshold=20):
