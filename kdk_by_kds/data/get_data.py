@@ -1,3 +1,9 @@
+"""
+KDK Karar Verilerini İnternetten Alma Modülü
+
+https://kararlar.ombudsman.gov.tr/Arama/Index
+
+"""
 import requests
 import pandas as pd
 from data.kdk_constant import url, headers, data_def
@@ -23,3 +29,6 @@ df.to_csv("kdk_all_data.csv", index=False)
 # https://www.urldecoder.io/
 # https://codebeautify.org/htmlviewer
 # https://stackoverflow.com/a/1260846
+# import requests
+# from scrapy import Selector
+# from scrapy.crawler import CrawlerProcess
